@@ -67,7 +67,7 @@ scanf("%d",&b.page);
 printf("\n ENTER THE PRICE: ");
 scanf("%f",&b.price);
 fp=fopen("testdata.txt","a");
-fprintf(fp,"%d %s %s %d %f",b.id,b.title,b.aur,b.page,b.price);
+fprintf(fp,"\n%d %s %s %d %f",b.id,b.title,b.aur,b.page,b.price);
 fclose(fp);
 printf("\n SUCCESFULLY ADDED");
 
