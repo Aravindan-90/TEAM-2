@@ -87,7 +87,7 @@ void searchbook(){
         fscanf(fp,"%d %s %s %d %f",&id,&title,&aur,&page,&price);
         if (id==scn)
         {
-            printf("\n%d\t%s\t%s\t%d\t%.2f",id,title,aur,page,price);
+            printf("\n%d\t%s\t\t\%s\t%d\t%.2f",id,title,aur,page,price);
             c=1;
         }
     }
@@ -104,7 +104,7 @@ void showallbook(){
     printf("\nID\tBookname\tAuthor\tPages\tPrice");
     while(ftell(fp)!=cd){
         fscanf(fp,"%d %s %s %d %f",&id,&title,&aur,&page,&price);
-        printf("\n%d\t%s\t\t%s\t%d\t%.2f",id,title,aur,page,price);
+        printf("\n%d\t%s\t\t\%s\t%d\t%.2f",id,title,aur,page,price);
     }
     fclose(fp);
 }
